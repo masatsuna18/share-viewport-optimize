@@ -22,6 +22,10 @@
 
 最小幅より広い端末では通常の指定のままのため、表示に影響はありません。
 
+## ダウンロード
+
+GitHubの「Code」→「Download ZIP」から、必要なファイル一式をまとめてダウンロードできます。
+
 ## 導入手順（WordPress）
 
 ### 1. ファイルのコピー
@@ -68,7 +72,3 @@ const DEFAULT_CONTENT = 'width=device-width,initial-scale=1';
 // SPデザインの基準幅が375pxの場合
 const MIN_WIDTH = 375;
 ```
-
-## ダウンロード
-
-GitHubの「Code」→「Download ZIP」から、必要なファイル一式をまとめてダウンロードできます。
