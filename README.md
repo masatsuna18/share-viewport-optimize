@@ -32,7 +32,7 @@ GitHubの「Code」→「Download ZIP」から、必要なファイル一式を�
 
 `js/`を有効化中のテーマ（子テーマを使う場合は子テーマ）の直下にコピーします。
 
-### 2. functions.phpへの追記
+### 2. JSの読み込み
 
 本リポジトリの`functions.php`の内容を、テーマの`functions.php`に追記します。
 
@@ -61,10 +61,12 @@ const MIN_WIDTH = 360;
 const DEFAULT_CONTENT = 'width=device-width,initial-scale=1';
 ```
 
-| 定数 | 内容 |
-|---|---|
-| `MIN_WIDTH` | 最小幅（px）。ブラウザの幅がこの値以下のとき、この幅で表示する |
+
+| 定数                | 内容                                   |
+| ----------------- | ------------------------------------ |
+| `MIN_WIDTH`       | 最小幅（px）。ブラウザの幅がこの値以下のとき、この幅で表示する     |
 | `DEFAULT_CONTENT` | ブラウザの幅が`MIN_WIDTH`より広いときの`content`の値 |
+
 
 `MIN_WIDTH`は、デザインやCSSで想定する最も狭い画面幅に合わせます。値を大きくするほど縮小表示される端末が増え、文字も小さく表示されます。
 
