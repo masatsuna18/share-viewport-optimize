@@ -42,15 +42,13 @@ add_action('wp_enqueue_scripts', function () {
 });
 ```
 
-### 3. meta viewportの確認
-
-ページの`<head>`内に`<meta name="viewport">`が出力されていることを確認します。通常のWordPressテーマでは`header.php`で出力済みです。
-
-### 4. 動作確認
+### 3. 動作確認
 
 Chromeのデベロッパーツールで、画面幅を最小幅より狭くして確認します。
 
 Elementsパネルで`<meta name="viewport">`の`content`が`width=最小幅`になり、ページが縮小表示されていることを確認する
+
+`<meta name="viewport">`が見つからない場合は、テーマの`header.php`に追加してください（JSは既存のタグを書き換えるだけで、新しく追加はしません）。
 
 ## 設定の変更
 
